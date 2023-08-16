@@ -1,7 +1,7 @@
 (function()  {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
-        <h1>Hello World</h1>
+        <h1>Hello World Geo Map</h1>
 	<!DOCTYPE html>
 	<html>
 		<head>
