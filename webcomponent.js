@@ -15,14 +15,6 @@
 	
 	<div id="allmap"></div>
 	 
-	<script type="text/javascript">
-    		// GL版命名空间为BMapGL
-    		// 按住鼠标右键，修改倾斜角和角度
-		var map = new BMapGL.Map("allmap");    // 创建Map实例
-		map.centerAndZoom(new BMapGL.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
-		map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
-	</script>
-
     `;
 
     customElements.define('com-sap-sample-helloworld1', class HelloWorld1 extends HTMLElement {
@@ -35,10 +27,11 @@
             		this._firstConnection = false;
 			this._props = {};
 			//let that = this;
-
+			<script type="text/javascript" src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=eaRmogHU5j9QCWGS1KcLXnLnRIYF9Nyw">
 			var map = new BMapGL.Map("allmap");    // 创建Map实例
 			map.centerAndZoom(new BMapGL.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
 			map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+			</script>
 		}
 
         //Fired when the widget is added to the html DOM of the page
