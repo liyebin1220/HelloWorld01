@@ -2,20 +2,19 @@
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
         <h1>Hello World Geo Map</h1>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	
- 	<style type="text/css">
-			body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+	
+ 	<style>
+		#allmap {
+  			width: 500px;
+     			height: 500px;
+			}
 	</style>
 	
  	<script type="text/javascript" src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=eaRmogHU5j9QCWGS1KcLXnLnRIYF9Nyw"></script>
 	
-	<body>
-		<div id="allmap"></div>
-	</body>
-	
- 
+	<div id="allmap"></div>
+	 
 	<script type="text/javascript">
     		// GL版命名空间为BMapGL
     		// 按住鼠标右键，修改倾斜角和角度
