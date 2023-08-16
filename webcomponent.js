@@ -10,7 +10,7 @@
      			height: 500px;
 			}
 	</style>
-	
+	<button type="button" id="myBtn">Helper Button</button>
  	<script type="text/javascript" src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=eaRmogHU5j9QCWGS1KcLXnLnRIYF9Nyw"></script>
 	
 	<div id="allmap"></div>
