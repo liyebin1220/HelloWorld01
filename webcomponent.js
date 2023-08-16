@@ -10,7 +10,7 @@
      			height: 500px;
 			}
 	</style>
-	<button type="button" id="myBtn">Helper Button</button>
+	<button type="button" id="myBtn">Helper Button 02</button>
  	<script type="text/javascript" src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=eaRmogHU5j9QCWGS1KcLXnLnRIYF9Nyw"></script>
 	
 	<div id="allmap"></div>
@@ -26,12 +26,23 @@
             		this.appendChild(tmpl.content.cloneNode(true));
             		this._firstConnection = false;
 			this._props = {};
-			//let that = this;
-			<script type="text/javascript" src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=eaRmogHU5j9QCWGS1KcLXnLnRIYF9Nyw">
+			let that = this;
+			
 			var map = new BMapGL.Map("allmap");    // 创建Map实例
 			map.centerAndZoom(new BMapGL.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
 			map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
-			</script>
+			
+
+			that._map = new Map({
+					basemap: "topo-vector"
+				});
+			
+				that._view = new MapView({
+					container: "custom-map-view",
+					map: that._map,
+					center: [142.7028, -20.9176],
+					zoom: 5
+				});
 		}
 
         //Fired when the widget is added to the html DOM of the page
