@@ -1,8 +1,7 @@
 (function()  {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
-        <h1>Hello World Geo Map</h1>
-	<button type="button" id="myBtn">Helper Button 02</button>
+        <h1>Hello World</h1>
     `;
 
     customElements.define('com-sap-sample-helloworld1', class HelloWorld1 extends HTMLElement {
@@ -10,12 +9,9 @@
 
 		constructor() {
 			super(); 
-			//this._shadowRoot = this.attachShadow({mode: "open"});
-            		this.appendChild(tmpl.content.cloneNode(true));
-            		this._firstConnection = false;
-			this._props = {};
-			
-			
+			this._shadowRoot = this.attachShadow({mode: "open"});
+            this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
+            this._firstConnection = false;
 		}
 
         //Fired when the widget is added to the html DOM of the page
