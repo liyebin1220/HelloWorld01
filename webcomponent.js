@@ -2,19 +2,7 @@
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
         <h1>Hello World Geo Map</h1>
-	
-	
- 	<style>
-		#allmap {
-  			width: 500px;
-     			height: 500px;
-			}
-	</style>
 	<button type="button" id="myBtn">Helper Button 02</button>
- 	<script type="text/javascript" src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=eaRmogHU5j9QCWGS1KcLXnLnRIYF9Nyw"></script>
-	
-	<div id="allmap"></div>
-	 
     `;
 
     customElements.define('com-sap-sample-helloworld1', class HelloWorld1 extends HTMLElement {
