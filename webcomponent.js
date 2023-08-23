@@ -2,6 +2,7 @@
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
         <h1>Hello World</h1>
+	<h2>Version: 2023-08-23 1414</h2>
     `;
 
     customElements.define('com-sap-sample-helloworld1', class HelloWorld1 extends HTMLElement {
